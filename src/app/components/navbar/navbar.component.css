@@ -1,0 +1,30 @@
+nav{
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  background-color: var(--dark-color);
+  z-index: 1000;
+}
+
+@media(max-width:500px) {
+  nav {
+    padding: 1rem;
+  }
+}
+
+nav > .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: var(--light-color);
+  font-size: 1.1rem;
+}
+
+nav > .container a {
+  color: var(--light-color);
+  cursor: pointer;
+}
+
+nav > .container ul {
+  display: flex;
+}

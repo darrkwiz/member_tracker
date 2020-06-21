@@ -1,0 +1,99 @@
+:root {
+  --primary-color: #246D5E;
+  --secondary-color: #6DA398;
+  --light-color: #f4f4f4;
+  --dark-color: #333;
+  --page-width:1100px;
+}
+
+
+/*  ELEMENTS RESETS
+----------------------------------------*/
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 1.4;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+
+
+/*  UTILITY CLASSES
+----------------------------------------*/
+
+.container {
+  max-width: var(--page-width);
+  margin: auto;
+  overflow: auto;
+}
+
+
+/*  //PADDING//  */
+.p-1{ padding: 0.5rem; }
+.p-2{ padding: 2rem; }
+.p-3{ padding: 3rem; }
+.p-4{ padding: 4rem; }
+
+.py-1 { padding: 0 0.5rem; }
+.py-2 { padding: 0 2rem; }
+.py-3 { padding: 0 3rem; }
+.py-4 { padding: 0 4rem; }
+
+.px-1 { padding: 0.5rem 0; }
+.px-2 { padding: 2rem 0; }
+.px-3 { padding: 3rem 0; }
+.px-4 { padding: 4rem 0; }
+
+
+/*  //MARGIN//  */
+.m-1{ margin: 0.5rem; }
+.m-2{ margin: 2rem; }
+.m-3{ margin: 3rem; }
+.m-4{ margin: 4rem; }
+
+.my-1{ margin: 0.5rem; }
+.my-2{ margin: 2rem; }
+.my-3{ margin: 3rem; }
+.my-4{ margin: 4rem; }
+
+.mx-1{ margin: 0.5rem; }
+.mx-2{ margin: 2rem; }
+.mx-3{ margin: 3rem; }
+.mx-4{ margin: 4rem; }
+
+
+/*  //TEXT//  */
+.primary-text {
+  color: var(--primary-color);
+}
+
+.secondary-text {
+  color: var(--secondary-color);
+}
+
+
+/*  //TEXT ALIGNMENT//  */
+.text-center {
+  text-align: center;
+}
+
+.text-right {
+  text-align: right;
+}
+
+.text-left {
+  text-align: left;
+}

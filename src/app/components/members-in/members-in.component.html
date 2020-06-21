@@ -1,0 +1,30 @@
+<div class="container">
+  <div class="filter">
+    <label for="filter">Filter Members</label>
+    <input #filter
+      type="text"
+      name="filter"
+      id="filter"
+      (keydown)="filterMems(filter.value)">
+  </div>
+  <div class="members_in mx-2">
+    <table>
+      <thead>
+        <th>First Name</th>
+        <th>last Name</th>
+        <th>Mobile Number</th>
+      </thead>
+      <tbody *ngFor="let member of members">
+        <tr>
+          <td>{{ member.first_name }}</td>
+          <td>{{ member.last_name }}</td>
+          <td>{{ member.tel }}</td>
+          <td title="delete"
+            class="del"
+            (click)="onDelete(member.tel)">
+          x</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>

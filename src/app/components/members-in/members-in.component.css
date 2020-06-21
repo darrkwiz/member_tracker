@@ -1,0 +1,27 @@
+table {
+  width: 100%;
+  text-align: center;
+  padding: 1rem;
+  border: solid 1px #333;
+}
+
+
+tr:nth-child(even) {
+  background-color: var(--primary-color);
+}
+
+td {
+  padding: 0.6rem;
+}
+
+@media(max-width:500px) {
+  table {
+    width: 100vw;
+  }
+}
+
+.del {
+  color: red;
+  font-weight: 700;
+  cursor: pointer;
+}

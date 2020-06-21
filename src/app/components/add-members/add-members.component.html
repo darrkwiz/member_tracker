@@ -1,0 +1,33 @@
+<div class="container form">
+  <h1><span class="primary-text">Register</span> A Member</h1>
+  <form #userForm (ngSubmit)="onSubmit()">
+    <div class="form-control">
+      <label for="fname">* First Name</label>
+      <input required
+        type="text"
+        name="fname"
+        id="fname"
+        placeholder="first name"
+        [(ngModel)]='this.member.first_name'>
+    </div>
+    <div class="form-control">
+      <label for="lname"> Last Name</label>
+      <input
+        type="text"
+        name="lname"
+        id="lname"
+        placeholder="last name"
+        [(ngModel)]='this.member.last_name'>
+    </div>
+    <div class="form-control">
+      <label for="tel">* Mobile Number</label>
+      <input required
+        type="tel"
+        name="tel"
+        id="tel"
+        placeholder="mobile number"
+        [(ngModel)]='this.member.mobile'>
+    </div>
+    <button class="btn"> Add New Member</button>
+  </form>
+</div>
